@@ -1,0 +1,15 @@
+********************************************
+RAY TRACING STATISTICS
+  total time                 0:00:11
+  num pixels                 40000 (200x200)
+  scene bounds               -0.189320 0.066660 -0.123542  -> 0.121998 0.374318 0.117505
+  num grid cells             52800 (40x40x33)
+  num non-shadow rays        40000
+  num shadow rays            67238
+  total intersections        3212148
+  total cells traversed      1750008
+  rays per second            9748.9
+  rays per pixel             2.7
+  intersections per ray      30.0
+  cells traversed per ray    16.3
+********************************************
