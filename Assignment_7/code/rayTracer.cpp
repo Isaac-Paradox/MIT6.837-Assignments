@@ -47,7 +47,7 @@ Vec3f RayTracer::traceRay(Ray& ray,
                     Ray shadowRay(intersection_point, light_dir);
                     Hit shadowHit(dist_2_light, nullptr, Vec3f(0, 0, -1.0f));
                     RayTracingStats::IncrementNumShadowRays();
-                    if (!obj->intersect(shadowRay, shadowHit, 1e-3)) {
+                    if (!obj->intersect(shadowRay, shadowHit, tmin)) {
                         color += hit.getMaterial()->Shade(ray, hit, light_dir, light_col);
                     }
                     RayTree::AddShadowSegment(shadowRay, 0, shadowHit.getT());
